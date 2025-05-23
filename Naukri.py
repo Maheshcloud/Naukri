@@ -7,8 +7,8 @@ import time
 # Initialize Chrome driver instance
 driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()))
 
-username = "test"
-password = "test"
+username = ${{ secrets.username }}
+password = ${{ secrets.password }}
 
 
 # Navigate to Naukri login page
