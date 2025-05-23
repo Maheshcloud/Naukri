@@ -1,3 +1,4 @@
+import os
 from selenium import webdriver
 # from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
@@ -7,8 +8,8 @@ import time
 # Initialize Chrome driver instance
 driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()))
 
-username = "${{ secrets.USERNAME }}"
-password = "${{ secrets.PASSWORD }}"
+username = os.environ["username"]
+password = os.environ["password"]
 
 
 # Navigate to Naukri login page
