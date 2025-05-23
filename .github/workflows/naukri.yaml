@@ -2,7 +2,7 @@ name: Naukri
 
 on:
   schedule:
-    - cron: "47 11 * * *"    
+    - cron: "*/5 * * * *"    
 
 jobs:
   build:
